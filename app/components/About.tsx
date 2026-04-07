@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="py-16 sm:py-24 px-4 bg-neutral">
       <div className="">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col-reverse md:flex-row gap-12 items-start">
           <div className="flex relative justify-center flex-shrink-0 px-4">
             <div className="transform -rotate-5 relative w-fit">
               <Image
@@ -40,7 +40,7 @@ export default function About() {
             </div>
 
             {/* Key Points */}
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
               {/* Point 1 */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
