@@ -13,8 +13,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zychor Biologicals",
-  description: "Advanced biological solutions for a sustainable future",
+  title: "Zychor Biologicals | Pharmaceutical Solutions for Healthcare",
+  description: "Zychor Biologicals provides advanced pharmaceutical solutions across osteoporosis, osteoarthritis, pain management, antiinfective, gastro care, and wound management.",
+  keywords: [
+    "Zychor Biologicals",
+    "pharmaceutical company",
+    "osteoporosis treatment",
+    "osteoarthritis solutions",
+    "pain management",
+    "antiinfective treatment",
+    "gastro care",
+    "wound management",
+    "biological solutions",
+    "healthcare products",
+    "calcium metabolism",
+    "joint care",
+    "GERD treatment",
+    "infection control",
+    "bone health",
+    "cartilage protection",
+    "analgesic therapy",
+    "PPI medication",
+    "tissue regeneration"
+  ],
+  authors: [{ name: "Zychor Biologicals" }],
+  openGraph: {
+    title: "Zychor Biologicals | Pharmaceutical Solutions",
+    description: "Advanced biological solutions across multiple therapeutic segments for healthcare needs.",
+    url: "https://www.zychorbiologicals.com",
+    siteName: "Zychor Biologicals",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
