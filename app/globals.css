@@ -10,6 +10,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom Color Palette */
+  --color-primary: #004B87;
+  --color-primary-light: #0066b3;
+  --color-primary-dark: #003d6b;
+  
+  --color-secondary: #102A43;
+  --color-secondary-light: #1a3a54;
+  --color-secondary-dark: #081a2d;
+  
+  --color-tertiary: #00BFA5;
+  --color-tertiary-light: #1ae0c6;
+  --color-tertiary-dark: #009e88;
+  
+  --color-neutral: #F8FAFC;
+  --color-neutral-dark: #e2e8f0;
 }
 
 @media (prefers-color-scheme: dark) {
