@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import About from './components/About';
 
 export default function Home() {
   return (
@@ -10,32 +11,8 @@ export default function Home() {
       {/* Hero Section Component */}
       <Hero />
 
-      {/* About Section */}
-      <section id="about" className="py-16 sm:py-24 px-4 bg-white dark:bg-black">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            About Zychor Biologicals
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold text-primary dark:text-tertiary mb-4">
-                Our Mission
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                We are committed to developing innovative biological solutions that address global challenges in healthcare, agriculture, and sustainability.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-primary dark:text-tertiary mb-4">
-                Our Vision
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                To be a leading global provider of advanced biological technologies that improve lives and protect our planet for future generations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* About Section Component */}
+      <About />
 
       {/* Products Section */}
       <section id="products" className="py-16 sm:py-24 px-4 bg-gray-50 dark:bg-gray-900">
