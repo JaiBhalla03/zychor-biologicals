@@ -30,7 +30,7 @@ export default function About() {
 
           {/* Text content on the right */}
           <div className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary dark:text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary">
             About Zychor Biologicals
             </h2>
             <div>

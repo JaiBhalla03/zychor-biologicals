@@ -35,10 +35,10 @@ const therapeuticAreas = [
 
 export default function TherapeuticAreas() {
   return (
-    <section id="therapeutic-areas" className="py-16 sm:py-24 px-4 bg-white dark:bg-black">
+    <section id="therapeutic-areas" className="py-16 sm:py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-primary dark:text-white mb-4 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 text-center">
           Our Therapeutic Areas
         </h2>
 
@@ -54,7 +54,7 @@ export default function TherapeuticAreas() {
             return (
               <div
                 key={idx}
-                className="bg-neutral rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-200 dark:border-gray-800"
+                className="bg-neutral rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-200"
               >
                 {/* Icon */}
                 <div className="mb-4">
@@ -64,12 +64,12 @@ export default function TherapeuticAreas() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-semibold text-primary dark:text-tertiary mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary mb-3">
                   {area.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base text-secondary dark:text-gray-400 leading-relaxed">
+                <p className="text-sm sm:text-base text-secondary leading-relaxed">
                   {area.description}
                 </p>
               </div>

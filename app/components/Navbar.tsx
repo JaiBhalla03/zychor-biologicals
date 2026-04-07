@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo on the left */}
@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation links */}
-          <div className="hidden md:flex gap-8 text-secondary dark:text-tertiary">
+          <div className="hidden md:flex gap-8 text-secondary">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -49,7 +49,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-primary hover:bg-gray-100 transition"
             aria-label="Toggle menu"
           >
             {isOpen ? (
@@ -62,14 +62,14 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden border-t border-gray-200 dark:border-gray-800 py-4">
+          <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-secondary dark:text-tertiary hover:text-primary transition font-medium px-2 py-2"
+                  className="text-secondary hover:text-primary transition font-medium px-2 py-2"
                 >
                   {link.label}
                 </a>

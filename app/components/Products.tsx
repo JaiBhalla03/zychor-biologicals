@@ -66,9 +66,9 @@ const productsData = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-16 sm:py-24 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="products" className="py-16 sm:py-24 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-primary dark:text-white mb-4 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 text-center">
           Our Products
         </h2>
         <p className="text-base sm:text-lg text-secondary text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
@@ -78,13 +78,13 @@ export default function Products() {
         {/* Product Categories */}
         <div className="space-y-12 sm:space-y-16">
           {productsData.map((section, idx) => (
-            <div key={idx} className="bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-md">
+            <div key={idx} className="bg-white rounded-2xl p-6 sm:p-8 shadow-md">
               {/* Category Header */}
-              <div className="mb-8 border-b border-gray-200 dark:border-gray-700 pb-6">
-                <h3 className="text-2xl sm:text-3xl font-bold text-primary dark:text-tertiary mb-2">
+              <div className="mb-8 border-b border-gray-200 pb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-2">
                   {section.category}
                 </h3>
-                <p className="text-sm sm:text-base text-secondary dark:text-gray-400">
+                <p className="text-sm sm:text-base text-secondary">
                   {section.description}
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function Products() {
                 {section.products.map((product, prodIdx) => (
                   <div
                     key={prodIdx}
-                    className="flex items-start gap-3 sm:gap-4 p-4 rounded-lg bg-neutral hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+                    className="flex items-start gap-3 sm:gap-4 p-4 rounded-lg bg-neutral hover:bg-gray-100 transition-colors"
                   >
                     <div className="flex-shrink-0 mt-1">
                       <div className="flex items-center justify-center h-8 w-8 sm:h-9 sm:w-9 rounded-full bg-gradient-to-br from-tertiary to-primary">
@@ -102,7 +102,7 @@ export default function Products() {
                       </div>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm sm:text-base font-semibold text-primary dark:text-tertiary break-words">
+                      <p className="text-sm sm:text-base font-semibold text-primary break-words">
                         {product}
                       </p>
                     </div>

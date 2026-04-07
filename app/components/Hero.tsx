@@ -22,12 +22,18 @@ export default function Hero() {
         </h3>
         <p className="text-sm text-se">At Zychor Biologicals, we are committed to delivering high-quality, science-driven therapies that improve patient outcomes and enhance quality of life across multiple therapeutic areas.</p>
         <div className="flex flex-col sm:flex-row gap-4 py-4">
-          <button className="px-8 py-3 bg-primary text-neutral rounded-lg hover:bg-primary-dark transition font-semibold">
+          <a
+            href="#products"
+            className="px-8 py-3 bg-primary text-neutral rounded-lg hover:bg-primary-dark transition font-semibold text-center"
+          >
             Explore Our Products
-          </button>
-          <button className="px-8 py-3 text-primary rounded-lg bg-neutral-dark text-primary transition font-semibold">
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-3 text-primary rounded-lg bg-neutral-dark hover:bg-gray-300 transition font-semibold text-center"
+          >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>
