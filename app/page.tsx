@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import TherapeuticAreas from './components/TherapeuticAreas';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
 
       {/* About Section Component */}
       <About />
+
+      {/* Therapeutic Areas Section Component */}
+      <TherapeuticAreas />
 
       {/* Products Section */}
       <section id="products" className="py-16 sm:py-24 px-4 bg-gray-50 dark:bg-gray-900">
