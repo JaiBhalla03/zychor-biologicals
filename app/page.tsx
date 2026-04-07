@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import TherapeuticAreas from './components/TherapeuticAreas';
+import Products from './components/Products';
 
 export default function Home() {
   return (
@@ -18,30 +19,8 @@ export default function Home() {
       {/* Therapeutic Areas Section Component */}
       <TherapeuticAreas />
 
-      {/* Products Section */}
-      <section id="products" className="py-16 sm:py-24 px-4 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Our Products
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Biotech Solutions", description: "Innovative biological products for industrial applications" },
-              { title: "Agricultural Bio", description: "Sustainable solutions for modern farming and crop health" },
-              { title: "Research Grade", description: "High-purity biological materials for research institutions" }
-            ].map((product, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  {product.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Products Section Component */}
+      <Products />
 
       {/* Contact Section */}
       <section id="contact" className="py-16 sm:py-24 px-4 bg-white dark:bg-black">

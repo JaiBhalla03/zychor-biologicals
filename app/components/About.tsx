@@ -19,10 +19,10 @@ export default function About() {
               {/* Glass Morphism Card at bottom right */}
               <div className="absolute -bottom-4 -right-4 rotate-5 bg-white/30 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/50">
                 <p className="text-xs sm:text-sm font-semibold text-primary">
-                  40+ Employees
+                  25 Products
                 </p>
                 <p className="text-xs text-secondary">
-                  PAN India
+                    Across 6 Therapeutic Areas
                 </p>
               </div>
             </div>
